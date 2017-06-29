@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6) 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../lib)
+add_executable(gperf version.cc positions.cc options.cc keyword.cc keyword-list.cc input.cc bool-array.cc hash-table.cc search.cc output.cc main.cc)
+target_link_libraries(gperf gp)
